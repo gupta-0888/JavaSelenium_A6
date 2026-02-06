@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<groups>
+			<run>
+				<include name="Malayalam	"></include>
+		<!-- 		<exclude name="Malayalam"></exclude> -->
+			</run>
+		</groups>
+		<classes>
+			<class name="org.automation.groupExecution.Prabhas" />
+			<class name="org.automation.groupExecution.Sudeepa" />
+			<class name="org.automation.groupExecution.Yash" />
+			<class name="org.automation.groupExecution.Rajnikanth" />
+			<class name="org.automation.groupExecution.Vijay" />
+			<class name="org.automation.groupExecution.RamCharan" />
+			<class name="org.automation.groupExecution.Mahesh" />
+			<class name="org.automation.groupExecution.AlluArjun" />
+			<class name="org.automation.groupExecution.JrNTR" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
