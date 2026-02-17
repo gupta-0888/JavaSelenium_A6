@@ -10,32 +10,46 @@ import org.openqa.selenium.support.PageFactory;
 public class CheckOutPage {
 	@FindBy(id = "billing-address-select")
 	private WebElement newAddressDD;
+
 	@FindBy(id = "BillingNewAddress_CountryId")
 	private WebElement countryDD;
+
 	@FindBy(id = "BillingNewAddress_City")
 	private WebElement cityTB;
+
 	@FindBy(id = "BillingNewAddress_Address1")
 	private WebElement address1TB;
+
 	@FindBy(id = "BillingNewAddress_PhoneNumber")
 	private WebElement phoneNoTB;
+
 	@FindBy(id = "BillingNewAddress_ZipPostalCode")
 	private WebElement postalCodeTB;
+
 	@FindBy(id = "BillingNewAddress.FaxNumber")
 	private WebElement faxNoTB;
+
 	@FindBy(id = "PickUpInStore")
 	private WebElement pickupCheckBox;
+
 	@FindBy(id = "paymentmethod_0")
 	private WebElement cashOnDileveryCheckBox;
+
 	@FindBy(id = "paymentmethod_1")
 	private WebElement moneyOrderCheckBox;
+
 	@FindBy(id = "paymentmethod_2")
 	private WebElement creditCardCheckBox;
+
 	@FindBy(id = "paymentmethod_3")
 	private WebElement purchaseOrderCheckBox;
+
 	@FindBy(id = "shippingoption_0")
 	private WebElement byGroundCheckBox;
+
 	@FindBy(id = "shippingoption_1")
 	private WebElement byAirCheckBox;
+
 	@FindBy(id = "shippingoption_2")
 	private WebElement by2DayAirCheckBox;
 
@@ -72,9 +86,8 @@ public class CheckOutPage {
 	@FindBy(xpath = "//h2[text()='Confirm order']/../..//a[text()='Back']")
 	private WebElement backLink5;
 
-	public CheckOutPage(WebDriver driver)
-	{
-		PageFactory.initElements(driver,this);
+	public CheckOutPage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
 	}
 
 	public WebElement getCountryDD() {
@@ -204,10 +217,10 @@ public class CheckOutPage {
 		}
 
 		su.selectByVisibleTextMehod(countryDD, "India");
-		cityTB.sendKeys(city);
-		address1TB.sendKeys(address1);
-		postalCodeTB.sendKeys(pinCode);
-		phoneNoTB.sendKeys(contact);
+//		cityTB.sendKeys(city);
+//		address1TB.sendKeys(address1);
+//		postalCodeTB.sendKeys(pinCode);
+//		phoneNoTB.sendKeys(contact);
 		cityTB.sendKeys(city);
 		address1TB.sendKeys(address1);
 		postalCodeTB.sendKeys(pinCode);
